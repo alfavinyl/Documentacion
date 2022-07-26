@@ -1,0 +1,119 @@
+body{
+    padding: 0px;
+    margin: 0px; 
+    font-family: 'Open Sans', sans-serif;
+}
+#main-doc{
+    /*background-color: yellow;*/
+    display: flex;  
+}
+.navegador{
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: column; 
+    width: 25%;
+    text-align: center; 
+    /*border: 2px solid green;*/
+    position: fixed;      
+}
+#navbar{
+    /*background-color: blueviolet;*/
+    border: yellow;
+    width: auto; 
+}
+.nav-link{
+    border: 1px solid black; 
+    padding: 5px;
+    width: auto;
+    text-align: left;
+}
+#navbar ul li{
+    list-style: none;  
+}
+#navbar ul{
+    overflow-y: scroll; 
+}
+header{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 15px; 
+}
+a.nav-link{
+    /*background-color: greenyellow;*/
+    width: auto; 
+    display: block;  
+/*    color:  black; */
+    padding: 15px 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+ul{
+    margin:0; 
+    padding: 0; 
+    display: block;
+    justify-content: center;
+    line-height: 1.5;
+}
+div.principal ul{
+    padding-left: 50px;
+}
+.principal{
+   /*background-color: red; */
+   display: flex;
+   flex-direction: column;  
+   margin-left: 25%; 
+   width: 75%; 
+   padding: 15px; 
+   z-index: 2; 
+   /*flex-grow: 1;*/  
+}
+
+@media (max-width: 640px){
+    #main-doc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .navegador{
+        display: flex;
+        flex-direction: column;
+        width: 100%;    
+        position: unset;        
+    }
+    .nav-link{
+        width: 100%;         
+    }
+    .principal{
+        display: column;   
+        width: 100%;
+        margin: 0;  
+        content: justify;      
+     }
+     section{
+         width: auto;
+         padding: 20px;
+     }
+@media (max-width: 230px){
+
+    .navegador{
+        display: flex;
+        flex-direction: column;
+        width: auto;        
+    }    
+    .nav-link{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    }
+}
+/*
+@media (min-width: 768px){
+
+}
+@media (max-width: 1400px){
+    
+}
+*/
